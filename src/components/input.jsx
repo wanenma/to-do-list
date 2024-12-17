@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './input.css'
 
 const Input = ({ taskList , setTaskList }) => {
   const [input,setInput]=useState("")
@@ -11,7 +12,7 @@ const Input = ({ taskList , setTaskList }) => {
     <div>
       <form>
         <input type="text" placeholder="add a task" value={input} onChange={(e)=>setInput(e.target.value)} />
-        <button type="button" onClick={HandleAddEvent}>Add</button>
+        <button className = "addbut" type="button" onClick={HandleAddEvent}>Add</button>
       </form>
     </div>
   )

@@ -14,7 +14,7 @@ function App() {
 				</div>
 				<div className="container">
 					{taskList.map((task, index) => (
-						<Board key={task} task={task} />
+						<Board key={task} task={task} taskList={taskList} setTaskList={setTaskList} index={index}/>
 					))}
 				</div>
 			</>
